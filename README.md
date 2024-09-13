@@ -1,7 +1,19 @@
-# mock-service
+# Mock Service
 
-## install
+## Install
+
+To install the required dependencies, run:
+
+```sh
 npm install express
+```
 
-## run
-node mock-server.js
+```sh
+curl --location 'http://localhost:3000/api/v1/user' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "userName": "testUser",
+    "email": "testuser@example.com",
+    "phoneNumber": "5551234567"
+}'
+```
