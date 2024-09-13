@@ -8,6 +8,12 @@ To install the required dependencies, run:
 npm install express
 ```
 
+## Start service
+```sh
+node mock-server.js
+```
+
+## Example curl 
 ```sh
 curl --location 'http://localhost:3000/api/v1/user' \
 --header 'Content-Type: application/json' \
